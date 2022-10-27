@@ -1,0 +1,143 @@
+Program to Display "Hello, World!"
+#include <stdio.h>
+int main() {
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}
+
+Program to Print an Integer
+#include <stdio.h>
+int main() {   
+    int number;
+    printf("Enter an integer: ");  
+    // reads and stores input
+    scanf("%d", &number);
+    // displays output
+    printf("You entered: %d", number);
+    return 0;
+}
+
+Program to Add Two Integers
+#include <stdio.h>
+int main() {    
+    int number1, number2, sum;
+    printf("Enter two integers: ");
+    scanf("%d %d", &number1, &number2);
+    // calculating sum
+    sum = number1 + number2;          
+    printf("%d + %d = %d", number1, number2, sum);
+    return 0;
+}
+
+Program to Multiply Two Numbers
+#include <stdio.h>
+int main() {
+    double a, b, product;
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &a, &b);  
+    // Calculating product
+    product = a * b;
+    // %.2lf displays number up to 2 decimal point
+    printf("Product = %.2lf", product);  
+    return 0;
+}
+
+Program to Print ASCII Value
+#include <stdio.h>
+int main() {  
+    char c;
+    printf("Enter a character: ");
+    scanf("%c", &c);     
+    // %d displays the integer value of a character
+    // %c displays the actual character
+    printf("ASCII value of %c = %d", c, c);
+    return 0;
+}
+
+Program to Compute Quotient and Remainder
+#include <stdio.h>
+int main() {
+    int dividend, divisor, quotient, remainder;
+    printf("Enter dividend: ");
+    scanf("%d", &dividend);
+    printf("Enter divisor: ");
+    scanf("%d", &divisor);
+    // Computes quotient
+    quotient = dividend / divisor;
+    // Computes remainder
+    remainder = dividend % divisor;
+    printf("Quotient = %d\n", quotient);
+    printf("Remainder = %d", remainder);
+    return 0;
+}
+
+Program to Find the Size of Variables
+#include<stdio.h>
+int main() {
+    int intType;
+    float floatType;
+    double doubleType;
+    char charType;
+    // sizeof evaluates the size of a variable
+    printf("Size of int: %zu bytes\n", sizeof(intType));
+    printf("Size of float: %zu bytes\n", sizeof(floatType));
+    printf("Size of double: %zu bytes\n", sizeof(doubleType));
+    printf("Size of char: %zu byte\n", sizeof(charType));
+    return 0;
+}
+
+Program Using the long keyword
+#include <stdio.h>
+int main() {
+    int a;
+    long b;   // equivalent to long int b;
+    long long c;  // equivalent to long long int c;
+    double e;
+    long double f;
+    printf("Size of int = %zu bytes \n", sizeof(a));
+    printf("Size of long int = %zu bytes\n", sizeof(b));
+    printf("Size of long long int = %zu bytes\n", sizeof(c));
+    printf("Size of double = %zu bytes\n", sizeof(e));
+    printf("Size of long double = %zu bytes\n", sizeof(f));
+    return 0;
+}
+
+Swap Numbers Using Temporary Variable
+#include<stdio.h>
+int main() {
+  double first, second, temp;
+  printf("Enter first number: ");
+  scanf("%lf", &first);
+  printf("Enter second number: ");
+  scanf("%lf", &second);
+  // value of first is assigned to temp
+  temp = first;
+  // value of second is assigned to first
+  first = second;
+  // value of temp (initial value of first) is assigned to second
+  second = temp;
+  // %.2lf displays number up to 2 decimal points
+  printf("\nAfter swapping, first number = %.2lf\n", first);
+  printf("After swapping, second number = %.2lf", second);
+  return 0;
+}
+
+Program to Check Even or Odd
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    // true if num is perfectly divisible by 2
+    if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num); 
+    return 0;
+}
+
+
+
+
+
